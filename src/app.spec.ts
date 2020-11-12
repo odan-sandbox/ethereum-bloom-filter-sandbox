@@ -10,6 +10,8 @@ const CONTRACT_ADDRESS = "0xdceaf1652a131F32a821468Dc03A92df0edd86Ea";
 
 describe("bloom filter", (): void => {
   describe("fixtures/block-0xAB8C4E.json", () => {
+    // '{"jsonrpc": "2.0", "id": 1, "method": "eth_getBlockByNumber", "params": ["0xAB8C4D", false]}'
+    // true にすると tx の object が返ってくる
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const block: BlockTransactionString = require("../fixtures/block-0xAB8C4E.json")
       .result;
