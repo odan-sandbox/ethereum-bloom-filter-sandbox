@@ -25,5 +25,9 @@
     "test:build": "yarn build --noEmit",
     "test:jest": "yarn jest --detectOpenHandles --forceExit",
     "test:lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "ethereum-bloom-filters": "^1.0.7",
+    "web3-eth": "^1.3.0"
   }
 }
